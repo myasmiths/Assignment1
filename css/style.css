@@ -1,0 +1,154 @@
+/*-- General Setup --*/
+html {
+  font-size: 62.5%;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+body {
+  color: #333; /* Dark text for easy readability */
+  background-color: #f9f9f9; /* Light background for the page */
+  font-size: 1.6rem;
+  font-family: 'Gentium Book Plus', serif; /* Updated font family */
+}
+
+/*-- Main Menu Styles --*/
+nav {
+  background-color: #663399; /* Rebecca Purple background for nav */
+}
+
+nav ul {
+  list-style: none;
+  padding: 1em;
+}
+
+nav a:link, nav a:visited {
+  color: #fff; /* White text for links */
+  text-decoration: none;
+}
+
+nav a:hover, nav a:active {
+  color: #F0F0F0; /* Slightly lighter color on hover */
+  text-decoration: underline;
+}
+
+nav a.active {
+  color: #F0F0F0; /* White for active links */
+}
+
+/*-- Hero Unit Styles --*/
+header {
+  width: 510px;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  background-color: #f9f9f9; /* Header background matches page background */
+  text-align: center;
+}
+
+header img {
+  width: 100%;
+  margin: 0 auto;
+}
+
+header h1 {
+  margin: 0 auto;
+  padding: 0 auto;
+  color: #663399; /* Rebecca Purple for main header text */
+}
+
+header .small {
+  margin-top: 1em;
+  color: #663399; /* Rebecca Purple for subheading */
+  font-family: 'Lato', sans-serif; /* Different font for small */
+  font-weight: 900; /* Bold font weight */
+  font-size: 1.8rem;
+  text-transform: uppercase; /* Uppercase text */
+}
+
+/*-- Article Styles --*/
+article {
+  width: 768px;
+  font-size: 18px;
+  line-height: 1.3;
+  color: #333; /* Dark text for the article */
+}
+
+article figure {
+  width: 39%;
+  margin: 0 0 1.25em 1.25em;
+  float: right; /* Floating figure to the right of the text */
+}
+
+article figcaption {
+  font-size: 1.2rem;
+  font-family: 'Arial', sans-serif;
+  color: #777; /* Lighter color for figcaption */
+}
+
+/*-- Pagination Button Styles --*/
+.pagination {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  width: 96%;
+}
+
+a.button {
+  border: 2px solid #663399; /* Rebecca Purple border on buttons */
+  padding: .4em 1em;
+  text-decoration: none;
+  color: #663399; /* Rebecca Purple for button text */
+  border-radius: 200px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 80%;
+}
+
+a.button:hover, a.button:active {
+  border-color: #551A8B; /* Slightly darker purple on hover */
+  background-color: #f0f0f0; /* Light background on hover */
+  color: #222; /* Darker text color on hover */
+}
+
+/*-- Footer Styles --*/
+footer {
+  text-align: center;
+  padding: 1.5em 0 .5em 0;
+  background-color: #663399; /* Rebecca Purple background for footer */
+  color: #fff; /* White text on the dark footer */
+  font-family: 'Lato', sans-serif;
+  font-size: 1.4rem; /* Slightly smaller font size for footer */
+}
+
+/*-- Media Queries --*/
+/* Adjusts layout for smaller screens */
+@media screen and (max-width: 768px) {
+  header { width: 96%; }
+  article { width: 96%; }
+  .pagination { width: 100%; }
+}
+
+/*-- Dropcap Style --*/
+.dropcap {
+  font-size: 4em;
+  float: left;
+  margin-right: 0.2em;
+  color: #663399; /* Rebecca Purple for the dropcap letter */
+}
+
+/*-- Hero Unit Adjustments --*/
+header img {
+  max-width: 100%; /* Make sure image is responsive */
+}
+
+/*-- Additional Styling to Improve Page Aesthetics --*/
+nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+article p {
+  margin-bottom: 1em;
+}
