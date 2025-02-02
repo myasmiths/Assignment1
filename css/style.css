@@ -17,6 +17,14 @@ body {
   padding: 0; /* Reset padding on body */
   display: flex; /* Use flexbox to center content */
   justify-content: center; /* Center content horizontally */
+  min-height: 100vh; /* Make sure body takes full height of the viewport */
+  flex-direction: column; /* Stack the content vertically */
+}
+
+main {
+  width: 100%;
+  max-width: 1200px; /* Limit the width to 1200px */
+  margin: 0 auto; /* Center main content */
 }
 
 /*-- Main Menu Styles --*/
